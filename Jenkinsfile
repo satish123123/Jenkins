@@ -16,5 +16,14 @@ pipeline {
             echo 'My new commits'
          }
       }
+      
+      stage('3rd'){
+         steps {
+            powershell label: '', script: '''$a= 18
+            $b= 8
+            write-host $($a+$b)'''
+            echo 'My stage 3 commits'
+         }
+      }
    }
 }
