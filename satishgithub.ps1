@@ -1,1 +1,1 @@
-get-service
+get-service -name BITS
