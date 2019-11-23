@@ -13,6 +13,7 @@ pipeline {
             powershell label: '', script: '''$a= 7
             $b= 8
             write-host $($a+$b)'''
+            echo 'My new commits'
          }
       }
    }
